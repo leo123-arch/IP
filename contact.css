@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(
+       rgb(8, 9, 10), 
+      rgba(184, 190, 235, 0)
+    ),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+   background: linear-gradient(
+       rgb(8, 9, 10), 
+      rgba(184, 190, 235, 0)
+    );
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.register-btn {
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-section p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+form button {
+  background-color: #ffc107;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 22px 0;
+  margin-top: 2rem;
+}
+
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffa500;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .register-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
