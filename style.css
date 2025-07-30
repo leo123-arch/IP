@@ -53,13 +53,13 @@ body {
 .btn {
   background-color: #ffa500;
   color: #000;
-  padding: 10px 20px;
+  padding: 16px 20px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero {
+.hero {      
   display: flex;
   justify-content: space-between;
   align-items: center;
