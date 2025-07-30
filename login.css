@@ -1,0 +1,143 @@
+  /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+       font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(
+      rgb(8, 9, 10), 
+      rgba(184, 190, 235, 0)
+    ),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg") no-repeat center center fixed;
+  background-size: cover;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 40px;
+    background: linear-gradient(
+      rgb(8, 9, 10), 
+      rgba(184, 190, 235, 0)
+    );
+      gap: 15px;
+    }
+
+    header img {
+      height: 80px;
+      width: 80px;
+    }
+
+    header .logo-text {
+      font-weight: bold;
+      color: orange;
+      font-size: 20px;
+    }
+
+    nav {
+      margin-left: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .register-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .register-form {
+      background: rgba(255 255 255 / 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      width: 360px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .register-form h2 {
+      margin-bottom: 25px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .register-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .register-form input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .register-form input:focus {
+      outline: 2px solid orange;
+      background: #1a2c85;
+      color: white;
+    }
+
+    .btn-register {
+      margin-top: 10px;
+      background-color: orange;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-register:hover {
+      background-color: #e69500;
+    }
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 22px 0;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffa500;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
