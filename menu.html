@@ -4,118 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu | Yes Baithak</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('your-background-image.jpg') no-repeat center center/cover;
-      color: white;
-    }
+  <link rel="stylesheet" href="menu.css">
+  <link rel="icon" type="image/png" href="LOGO.jpg" />
+  <!-- Font + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-    .menu-container {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: rgba(0, 0, 0, 0.75);
-    }
-
-    .menu-container h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .menu-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .menu-card {
-      background-color: #111;
-      border-radius: 10px;
-      padding: 20px;
-      width: 280px;
-      box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .menu-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .menu-card img {
-      width: 100%;
-      height: 180px;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-
-    .menu-card h3 {
-      color: #ffc107;
-      margin-top: 15px;
-    }
-
-    .menu-card p {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    .price {
-      font-weight: bold;
-      margin-top: 10px;
-      color: white;
-    }
-
-    .footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #ccc;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="menu-container">
-    <h1>Our Menu</h1>
-    <p>Explore our hand-picked dishes, cooked with love and spices</p>
-
+  <!-- Breakfast -->
+  <div class="menu-section" id="breakfast">
+    <h2>Breakfast</h2>
     <div class="menu-items">
-      <!-- Sample menu item -->
-      <div class="menu-card">
-        <img src="grilled-chicken.jpg" alt="Grilled Chicken">
-        <h3>Grilled Chicken</h3>
-        <p>Juicy chicken grilled to perfection with herbs and spices.</p>
-        <div class="price">₹299</div>
-      </div>
-
-      <div class="menu-card">
-        <img src="paneer-tikka.jpg" alt="Paneer Tikka">
-        <h3>Paneer Tikka</h3>
-        <p>Delicious cottage cheese chunks marinated and grilled.</p>
-        <div class="price">₹250</div>
-      </div>
-
-      <div class="menu-card">
-        <img src="biryani.jpg" alt="Biryani">
-        <h3>Hyderabadi Biryani</h3>
-        <p>Fragrant basmati rice with tender mutton and spices.</p>
-        <div class="price">₹320</div>
-      </div>
-
-      <div class="menu-card">
-        <img src="veg-thali.jpg" alt="Veg Thali">
-        <h3>Veg Thali</h3>
-        <p>Wholesome Indian thali with roti, sabzi, dal & dessert.</p>
-        <div class="price">₹199</div>
-      </div>
-
-      <!-- Add more items as needed -->
+      <div class="menu-card"><img src="idli.jpg"><h3>Idli Sambhar</h3><p>Soft idlis with hot sambhar</p><div class="price">₹70</div></div>
+      <div class="menu-card"><img src="poha.jpg"><h3>Poha</h3><p>Flattened rice with spices & lemon</p><div class="price">₹50</div></div>
+      <div class="menu-card"><img src="omelette.jpg"><h3>Masala Omelette</h3><p>Egg omelette with onion & green chilies</p><div class="price">₹60</div></div>
+      <div class="menu-card"><img src="paratha.jpg"><h3>Aloo Paratha</h3><p>Stuffed paratha served with curd</p><div class="price">₹80</div></div>
+      <div class="menu-card"><img src="dosa.jpg"><h3>Plain Dosa</h3><p>Crispy dosa with coconut chutney</p><div class="price">₹70</div></div>
+      <div class="menu-card"><img src="upma.jpg"><h3>Upma</h3><p>Semolina upma with veggies</p><div class="price">₹50</div></div>
+      <div class="menu-card"><img src="bread-butter.jpg"><h3>Bread Butter</h3><p>Toasted bread with butter</p><div class="price">₹40</div></div>
+      <div class="menu-card"><img src="chai.jpg"><h3>Cutting Chai</h3><p>Strong Indian tea</p><div class="price">₹15</div></div>
     </div>
   </div>
 
+  <!-- Lunch -->
+  <div class="menu-section" id="lunch">
+    <h2>Lunch</h2>
+    <div class="menu-items">
+      <div class="menu-card"><img src="veg-thali.jpg"><h3>Veg Thali</h3><p>Complete veg meal with roti, sabji, dal, rice</p><div class="price">₹180</div></div>
+      <div class="menu-card"><img src="biryani.jpg"><h3>Chicken Biryani</h3><p>Fragrant rice with tender chicken</p><div class="price">₹220</div></div>
+      <div class="menu-card"><img src="paneer.jpg"><h3>Paneer Butter Masala</h3><p>Creamy cottage cheese curry</p><div class="price">₹200</div></div>
+      <div class="menu-card"><img src="dal-makhani.jpg"><h3>Dal Makhani</h3><p>Slow-cooked black lentils</p><div class="price">₹150</div></div>
+      <div class="menu-card"><img src="chole-bhature.jpg"><h3>Chole Bhature</h3><p>Fried bread with spicy chickpeas</p><div class="price">₹100</div></div>
+      <div class="menu-card"><img src="fried-rice.jpg"><h3>Veg Fried Rice</h3><p>Rice tossed with vegetables & sauces</p><div class="price">₹120</div></div>
+      <div class="menu-card"><img src="rajma.jpg"><h3>Rajma Chawal</h3><p>Red kidney beans curry with rice</p><div class="price">₹140</div></div>
+      <div class="menu-card"><img src="tandoori-roti.jpg"><h3>Tandoori Roti (2 pcs)</h3><p>Whole wheat roti made in tandoor</p><div class="price">₹40</div></div>
+    </div>
+  </div>
+
+  <!-- Dinner -->
+  <div class="menu-section" id="dinner">
+    <h2>Dinner</h2>
+    <div class="menu-items">
+      <div class="menu-card"><img src="mutton-curry.jpg"><h3>Mutton Curry</h3><p>Spicy and tender mutton curry</p><div class="price">₹300</div></div>
+      <div class="menu-card"><img src="chicken-curry.jpg"><h3>Chicken Curry</h3><p>Classic Indian chicken curry</p><div class="price">₹220</div></div>
+      <div class="menu-card"><img src="paneer-tikka.jpg"><h3>Paneer Tikka</h3><p>Grilled marinated paneer cubes</p><div class="price">₹190</div></div>
+      <div class="menu-card"><img src="naan.jpg"><h3>Butter Naan</h3><p>Soft naan topped with butter</p><div class="price">₹30</div></div>
+      <div class="menu-card"><img src="jeera-rice.jpg"><h3>Jeera Rice</h3><p>Rice tempered with cumin</p><div class="price">₹90</div></div>
+      <div class="menu-card"><img src="gobi-manchurian.jpg"><h3>Gobi Manchurian</h3><p>Crispy cauliflower tossed in sauce</p><div class="price">₹140</div></div>
+      <div class="menu-card"><img src="veg-kolhapuri.jpg"><h3>Veg Kolhapuri</h3><p>Spicy mixed veg curry</p><div class="price">₹160</div></div>
+      <div class="menu-card"><img src="sweet.jpg"><h3>Gulab Jamun (2 pcs)</h3><p>Sweet milk balls soaked in syrup</p><div class="price">₹60</div></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <div class="footer">
     © 2025 Yes Baithak. All rights reserved.
   </div>
