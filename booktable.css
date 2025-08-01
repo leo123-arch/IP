@@ -1,0 +1,92 @@
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+
+
+  .book-section {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+    .book-section h1 {
+      font-size: 40px;
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+
+    .book-section p {
+      color: #ccc;
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .book-form {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+    }
+
+    .book-form input,
+    .book-form select,
+    .book-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background: #222;
+      color: white;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    .book-form input::placeholder,
+    .book-form textarea::placeholder {
+      color: #aaa;
+    }
+
+    .book-form button {
+      width: 100%;
+      background-color: #ffc107;
+      color: black;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .book-form button:hover {
+      background-color: #e6ac00;
+    }
+
+    .footer {
+      text-align: center;
+      background: #111;
+      color: #ccc;
+      padding: 20px 0;
+      margin-top: -1px;
+    }
+
+    @media (max-width: 600px) {
+      .book-section h1 {
+        font-size: 30px;
+      }
+
+      .book-form {
+        padding: 20px;
+      }
+    }
