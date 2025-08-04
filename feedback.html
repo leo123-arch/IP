@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - YES BAITHAK</title>
+  <link rel="stylesheet" href="feedback.css" />
+  <link rel="icon" type="image/png" href="LOGO.jpg" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+<div class="container">
+  <h2>Feedback Form - YES BAITHAK</h2>
+  <form id="feedbackForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating">
+      <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+      <option value="4">⭐️⭐️⭐️⭐️ Good</option>
+      <option value="3">⭐️⭐️⭐️ Average</option>
+      <option value="2">⭐️⭐️ Poor</option>
+      <option value="1">⭐️ Terrible</option>
+    </select>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+    <label>Upload Screenshot (Drag & Drop or Click):</label>
+    <div class="drop-area" id="drop-area">
+      <p>Drag & drop file here or click to upload</p>
+      <input type="file" id="fileElem" accept="image/*" style="display:none">
+    </div>
+
+    <label for="canvas">Draw Something (Optional):</label>
+    <canvas id="canvas"></canvas>
+    <div class="canvas-buttons">
+      <button type="button" onclick="clearCanvas()">Clear</button>
+      <button type="button" onclick="saveCanvas()">Save Drawing</button>
+    </div>
+
+    <div class="button-row">
+      <button type="submit" class="submit-btn">Submit Feedback</button>
+      <button type="button" class="back-btn" onclick="window.location.href='contact.html'">Back</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Drag and Drop
+  let dropArea = document.getElementById('drop-area');
+  let fileInput = document.getElementById('fileElem');
+
+  dropArea.addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', handleFiles);
+
+  ['dragenter', 'dragover'].forEach(eventName => {
+    dropArea.addEventListener(eventName, (e) => {
+      e.preventDefault();
+      dropArea.classList.add('highlight');
+    }, false)
+  });
+
+  ['dragleave', 'drop'].forEach(eventName => {
+    dropArea.addEventListener(eventName, (e) => {
+      e.preventDefault();
+      dropArea.classList.remove('highlight');
+    }, false)
+  });
+
+  dropArea.addEventListener('drop', (e) => {
+    handleFiles(e.dataTransfer.files);
+  });
+
+  function handleFiles(files) {
+    const file = files[0];
+    const name = document.createElement('p');
+    name.textContent = "File selected: " + file.name;
+    dropArea.innerHTML = '';
+    dropArea.appendChild(name);
+  }
+
+  // Canvas Doodle
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth = 2;
+
+  let drawing = false;
+
+  canvas.addEventListener('mousedown', () => drawing = true);
+  canvas.addEventListener('mouseup', () => drawing = false);
+  canvas.addEventListener('mouseout', () => drawing = false);
+  canvas.addEventListener('mousemove', draw);
+
+  function draw(e) {
+    if (!drawing) return;
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY);
+  }
+
+  function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function saveCanvas() {
+    const imageData = canvas.toDataURL();
+    alert("Drawing saved (in-memory). You can send this data to a backend:\n" + imageData.substring(0, 100) + "...");
+  }
+
+  document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Feedback submitted! (This form can be wired to your backend or email.)");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(
+       rgb(8, 9, 10), 
+      rgba(184, 190, 235, 0)
+    ),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  color: #FFA500;
+}
+
+label {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Submit + Back buttons */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.back-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #FFA500;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.back-btn:hover {
+  background-color: #e69500;
+}
+
+/* Drag & Drop area */
+.drop-area {
+  border: 2px dashed #FFA500;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #2c2c2c;
+}
+.drop-area.highlight {
+  border-color: #ff0;
+  background-color: #444;
+}
+
+/* Doodle area */
+#canvas {
+  border: 2px solid #FFA500;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  cursor: crosshair;
+  background-color: #fff;
+}
+
+.canvas-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.canvas-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.canvas-buttons button:hover {
+  background: #777;
+}
