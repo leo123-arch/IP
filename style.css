@@ -50,6 +50,10 @@ body {
 .nav-links a:focus {
   color: #ffa500;
 }
+.nav a:hover,
+nav a.active {
+  color: orange;
+}
 
 
 .btn {
