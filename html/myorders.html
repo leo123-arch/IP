@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seafood Menu</title>
+  <link rel="stylesheet" href="../css/myorders.css">
+</head>
+<body>
+
+  <h1>SEAFOOD</h1>
+
+  <div class="menu-item">
+    <img src="../images/POMFRET_FRY.jpg" alt="Pomfret Fry">
+    <div class="menu-info">
+      <div class="menu-title">POMFRET FRY</div>
+      <div class="menu-desc">Pomfret fried with Indian spices</div>
+      <div class="price">₹350</div>
+      <div class="quantity-selector">
+        <button onclick="changeQty('qty1', -1)">-</button>
+        <span id="qty1">1</span>
+        <button onclick="changeQty('qty1', 1)">+</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/cart.js"></script>
+</body>
+</html>
