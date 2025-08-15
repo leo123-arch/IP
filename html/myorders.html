@@ -5,23 +5,386 @@
   <title>Seafood Menu</title>
   <link rel="stylesheet" href="../css/myorders.css">
 </head>
-<body>
+<body> 
+   <header>
+    <img src="../images/LOGO.jpg" alt="YES BAITHAK Logo" />
+    <div class="logo-text">YES BAITHAK</div>
+    <nav>
+      <a href="myorders.html"class="active">MY ORDERS</a>
+      <a href="menu.html">MENU</a>
+    </nav>
+  </header>
+  <!-- Floating Cart Icon -->
+<a href="cart.html" class="floating-cart-icon">
+  🛒
+  <span id="cart-count">0</span>
+</a>
 
-  <h1>SEAFOOD</h1>
-
+<div class="menu-container">
   <div class="menu-item">
-    <img src="../images/POMFRET_FRY.jpg" alt="Pomfret Fry">
-    <div class="menu-info">
-      <div class="menu-title">POMFRET FRY</div>
-      <div class="menu-desc">Pomfret fried with Indian spices</div>
-      <div class="price">₹350</div>
-      <div class="quantity-selector">
+    <img src="../images/POMFRET_FRY.jpg" class="item-image" />
+    <div class="item-details">
+      <h3 class="item-title">POMFRET FRY</h3>
+      <p class="item-description">Pomfret fried with Indian spices</p>
+      <div class="price-and-quantity">
+        <span class="price">₹350</span>
+        <div class="quantity-selector">
         <button onclick="changeQty('qty1', -1)">-</button>
-        <span id="qty1">1</span>
+        <span id="qty1">0</span>
         <button onclick="changeQty('qty1', 1)">+</button>
       </div>
-    </div>
+      </div>
+    </div> 
   </div>
+        <div class="menu-item">
+          <img src="../images/PRAWANS_TIKKA.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">PRAWANS TIKKA</h3>
+            <p class="item-description">Prawans cooked under Coal</p>
+            <div class="price-and-quantity">
+              <span class="price">₹300</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty2', -1)">-</button>
+              <span id="qty2">0</span>
+              <button onclick="changeQty('qty2', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+              <div class="menu-item">
+          <img src="../images/BANGDA_FRY.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">BANGDA FRY</h3>
+            <p class="item-description">Bandga fried with Indian spices</p>
+            <div class="price-and-quantity">
+              <span class="price">₹215</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty3', -1)">-</button>
+              <span id="qty3">0</span>
+              <button onclick="changeQty('qty3', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+              <div class="menu-item">
+          <img src="../images/FISH_TIKKA.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">FISH TIKKA</h3>
+            <p class="item-description">Fish Made on Coal</p>
+            <div class="price-and-quantity">
+              <span class="price">₹280</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty4', -1)">-</button>
+              <span id="qty4">0</span>
+              <button onclick="changeQty('qty4', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+           <div class="menu-item">
+          <img src="../images/POMFRET_TANDOORI.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">POMFRET TANDOORI</h3>
+            <p class="item-description">Pomfret cooked on Coal</p>
+            <div class="price-and-quantity">
+              <span class="price">₹280</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty5', -1)">-</button>
+              <span id="qty5">0</span>
+              <button onclick="changeQty('qty5', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/SURMAI_TANDOORI.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">SURMAI TANDOORI</h3>
+            <p class="item-description">Surmai cooked on Coal</p>
+            <div class="price-and-quantity">
+              <span class="price">₹300</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty6', -1)">-</button>
+              <span id="qty6">0</span>
+              <button onclick="changeQty('qty6', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/POMFRET_GREEN_TANDOORI.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">POMFRET GREEN TANDOORI</h3>
+            <p class="item-description">Pomfret cooked on Coal with Green Masala</p>
+            <div class="price-and-quantity">
+              <span class="price">₹400</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty7', -1)">-</button>
+              <span id="qty7">0</span>
+              <button onclick="changeQty('qty7', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/SURMAI_FRY.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">SURMAI FRY</h3>
+            <p class="item-description">Surmai fish fried with Indian spices</p>
+            <div class="price-and-quantity">
+              <span class="price">₹350</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty8', -1)">-</button>
+              <span id="qty8">0</span>
+              <button onclick="changeQty('qty8', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/veg-thali.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">VEG THALI</h3>
+            <p class="item-description">Complete veg meal with roti, sabji, dal, rice</p>
+            <div class="price-and-quantity">
+              <span class="price">₹180</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty9', -1)">-</button>
+              <span id="qty9">0</span>
+              <button onclick="changeQty('qty9', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Chicken-Biryani.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">CHICKEN BIRYANI</h3>
+            <p class="item-description">Fragrant rice with tender chicken</p>
+            <div class="price-and-quantity">
+              <span class="price">₹220</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty10', -1)">-</button>
+              <span id="qty10">0</span>
+              <button onclick="changeQty('qty10', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/paneer.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">PANEER BUTTER MASALA</h3>
+            <p class="item-description">Creamy cottage cheese curry</p>
+            <div class="price-and-quantity">
+              <span class="price">₹200</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty11', -1)">-</button>
+              <span id="qty11">0</span>
+              <button onclick="changeQty('qty11', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/dal-Makhani.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">DAL MAKHANI</h3>
+            <p class="item-description">Slow-cooked black lentils</p>
+            <div class="price-and-quantity">
+              <span class="price">₹150</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty12', -1)">-</button>
+              <span id="qty12">0</span>
+              <button onclick="changeQty('qty12', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Chole-Bhature.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">CHOLE BHATURE</h3>
+            <p class="item-description">Fried bread with spicy chickpeas</p>
+            <div class="price-and-quantity">
+              <span class="price">₹100</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty13', -1)">-</button>
+              <span id="qty13">0</span>
+              <button onclick="changeQty('qty13', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Fried-Rice.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">VEG FRIED RICE</h3>
+            <p class="item-description">Rice tossed with vegetables & sauces</p>
+            <div class="price-and-quantity">
+              <span class="price">₹120</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty14', -1)">-</button>
+              <span id="qty14">0</span>
+              <button onclick="changeQty('qty14', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/rajma.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">RAJMA CHAWAL</h3>
+            <p class="item-description">Red kidney beans curry with rice</p>
+            <div class="price-and-quantity">
+              <span class="price">₹140</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty15', -1)">-</button>
+              <span id="qty15">0</span>
+              <button onclick="changeQty('qty15', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Tandoori-Roti.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">TANDOORI ROTI (2 PCS)</h3>
+            <p class="item-description">Whole wheat roti made in tandoor</p>
+            <div class="price-and-quantity">
+              <span class="price">₹40</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty16', -1)">-</button>
+              <span id="qty16">0</span>
+              <button onclick="changeQty('qty16', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Mutton-Curry.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">MUTTON CURRY</h3>
+            <p class="item-description">Spicy and tender mutton curry</p>
+            <div class="price-and-quantity">
+              <span class="price">₹300</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty17', -1)">-</button>
+              <span id="qty17">0</span>
+              <button onclick="changeQty('qty17', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Chicken-Curry.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">CHICKEN CURRY</h3>
+            <p class="item-description">Classic Indian chicken curry</p>
+            <div class="price-and-quantity">
+              <span class="price">₹220</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty18', -1)">-</button>
+              <span id="qty18">0</span>
+              <button onclick="changeQty('qty18', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Paneer-Tikka.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">PANEER TIKKA</h3>
+            <p class="item-description">Grilled marinated paneer cubes</p>
+            <div class="price-and-quantity">
+              <span class="price">₹190</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty19', -1)">-</button>
+              <span id="qty19">0</span>
+              <button onclick="changeQty('qty19', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Naan.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">BUTTER NAAN</h3>
+            <p class="item-description">Soft and fluffy Indian bread  </p>
+            <div class="price-and-quantity">
+              <span class="price">₹30</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty20', -1)">-</button>
+              <span id="qty20">0</span>
+              <button onclick="changeQty('qty20', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Jeera-Rice.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">JEERA RICE</h3>
+            <p class="item-description">Fragrant basmati rice with cumin seeds</p>
+            <div class="price-and-quantity">
+              <span class="price">₹90</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty21', -1)">-</button>
+              <span id="qty21">0</span>
+              <button onclick="changeQty('qty21', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Gobi-Manchurian.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">GOBI MANCHURIAN</h3>
+            <p class="item-description">Crispy cauliflower tossed in sauce</p>
+            <div class="price-and-quantity">
+              <span class="price">₹140</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty22', -1)">-</button>
+              <span id="qty22">0</span>
+              <button onclick="changeQty('qty22', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Veg-Kolhapuri.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">VEG KOLHAPURI</h3>
+            <p class="item-description">Mixed vegetables in spicy gravy</p>
+            <div class="price-and-quantity">
+              <span class="price">₹160</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty23', -1)">-</button>
+              <span id="qty23">0</span>
+              <button onclick="changeQty('qty23', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+          <img src="../images/Gulab-Jamun.jpg" class="item-image" />
+          <div class="item-details">
+            <h3 class="item-title">GULAB JAMUN (2 PCS)</h3>
+            <p class="item-description">Soft and spongy milk dumplings in sugar syrup</p>
+            <div class="price-and-quantity">
+              <span class="price">₹60</span>
+              <div class="quantity-selector">
+              <button onclick="changeQty('qty24', -1)">-</button>
+              <span id="qty24">0</span>
+              <button onclick="changeQty('qty24', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
   <script src="../js/cart.js"></script>
+  <div class="footer">
+    © 2025 Yes Baithak. All rights reserved.
+  </div>
 </body>
 </html>
