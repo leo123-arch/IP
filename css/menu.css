@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-    body {
-      line-height: 1.6;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg') no-repeat center center/cover;
-      color: #fff;
-      background-size: cover;
-    }
-    
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-restaurant-menu-with-fast-food-images-through-online-banners-social-image_16290915.jpg') no-repeat center center/cover;
+  color: #fff;
+  background-size: cover;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -45,78 +46,150 @@ nav {
 }
 
 nav a {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   transition: color 0.3s ease;
 }
-    .menu-section {
-      padding: 60px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-    }
 
-    .menu-section h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: #ffc107;
-      border-bottom: 2px solid #ffc107;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+.menu-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
 
-    .menu-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-    }
+.menu-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 
-    .menu-card {
-      background-color: #111;
-      border-radius: 10px;
-      padding: 20px;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
-      transition: transform 0.3s ease;
-    }
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
 
-    .menu-card:hover {
-      transform: translateY(-5px);
-    }
+.menu-card {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+  transition: transform 0.3s ease;
+}
 
-    .menu-card img {
-      width: 100%;
-      height: 150px;
-      border-radius: 8px;
-      object-fit: cover;
-    }
+.menu-card:hover {
+  transform: translateY(-5px);
+}
 
-    .menu-card h3 {
-      color: #ffc107;
-      margin-top: 15px;
-      font-size: 20px;
-    }
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
-    .menu-card p {
-      font-size: 13px;
-      color: #ccc;
-    }
+.menu-card h3 {
+  color: #ffc107;
+  margin-top: 15px;
+  font-size: 20px;
+}
 
-    .price {
-      font-weight: bold;
-      margin-top: 10px;
-      color: white;
-    }
+.menu-card p {
+  font-size: 13px;
+  color: #ccc;
+}
 
-    .footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #ccc;
-    }
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Popup styles */
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* When active */
+.popup-image.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.popup-image img {
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-image h3 {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.popup-image p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.popup-image .price {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-image .full-desc {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
+
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+}
+
 nav a:hover,
 nav a.active {
   color: orange;
