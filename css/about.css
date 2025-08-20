@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 5px 40px;
   background: linear-gradient(rgb(8, 9, 10),
       rgba(184, 190, 235, 0));
   flex-wrap: wrap;
